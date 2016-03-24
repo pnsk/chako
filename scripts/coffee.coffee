@@ -12,3 +12,5 @@ module.exports = (robot) ->
 
    robot.hear /break/i, (res) ->
       res.send "give you :coffee:"
+   robot.respond /please/i, (res) ->
+      res.reply ":bow:"
