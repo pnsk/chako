@@ -10,11 +10,11 @@
 
 module.exports = (robot) ->
 
-   robot.hear /weather/i, (mes) ->
-        get_weather mes
-
-get_weather = (msg) ->
-    msg.http('http://wttr.in')
-    .get() (err, res, body) ->
-         msg.send "#{body}"
+#   robot.hear /weather/i, (mes) ->
+#        get_weather mes
+#
+#get_weather = (msg) ->
+#    msg.http('http://wttr.in')
+#    .get() (err, res, body) ->
+#         msg.send "#{body}"
 
