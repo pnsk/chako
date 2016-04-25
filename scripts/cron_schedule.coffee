@@ -9,3 +9,8 @@ module.exports = (robot) ->
   new cron '0 0 10 * * 1-5', () =>
     robot.send {room: "#general"}, "今日もお仕事頑張って〜"
   , null, true, "Asia/Tokyo"
+
+module.exports = (robot) ->
+  new cron '0 30 0 * * *', () =>
+    robot.send {room: "#general"}, "そろそろ寝るよ"
+  , null, true, "Asia/Tokyo"
