@@ -11,6 +11,6 @@ module.exports = (robot) ->
   , null, true, "Asia/Tokyo"
 
 module.exports = (robot) ->
-  new cron '0 30 0 * * *', () =>
-    robot.send {room: "#general"}, "そろそろ寝るよ"
+  new cron '0 45 0 * * *', () =>
+    robot.send {room: "#general"}, "@channel そろそろ寝るよ"
   , null, true, "Asia/Tokyo"
