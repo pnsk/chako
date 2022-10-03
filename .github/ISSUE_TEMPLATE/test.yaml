@@ -5,5 +5,9 @@ title: "[DATE]: [FEATURE NAME]"
 labels: tracking issue, needs triage
 assignees: octocat
 ---
-Body:
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
 
